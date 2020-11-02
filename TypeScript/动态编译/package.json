@@ -1,0 +1,27 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src",
+    "start:tsc": "tsc -w",
+    "start:nodemon": "nodemon node ./build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.22",
+    "@types/superagent": "^4.1.10",
+    "cheerio": "^1.0.0-rc.3",
+    "nodemon": "^2.0.6",
+    "superagent": "^6.1.0"
+  }
+}
